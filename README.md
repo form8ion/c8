@@ -31,7 +31,7 @@ form8ion plugin for the c8 code-coverage tool
 ### Installation
 
 ```sh
-$ npm install @form8ion/c8
+$ npm install @form8ion/c8 --save-prod
 ```
 
 ### Example
