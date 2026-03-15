@@ -50,6 +50,10 @@
     "provenance": true
   },
   "packageManager": "npm@11.11.1+sha512.6ac6b30a876415dcf545e433ba4cb34bf0c3efbb86088a9415e446de0b5a4fc6fd511d277b59bd40e06e3204fbda28f5aeded346b3a8c780355b39ed31622e12",
+  "dependencies": {
+    "@form8ion/config-file": "^1.3.0",
+    "@form8ion/core": "^4.11.1"
+  },
   "devDependencies": {
     "@cucumber/cucumber": "12.7.0",
     "@form8ion/commitlint-config": "2.0.10",
@@ -75,9 +79,5 @@
     "rollup-plugin-auto-external": "2.0.0",
     "vitest": "4.1.0",
     "vitest-when": "0.10.0"
-  },
-  "dependencies": {
-    "@form8ion/config-file": "^1.3.0",
-    "@form8ion/core": "^4.11.1"
   }
 }
