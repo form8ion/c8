@@ -12,6 +12,6 @@ describe('c8 remover', () => {
     const projectRoot = any.string();
 
     expect(await removeC8({projectRoot})).toEqual({dependencies: {javascript: {remove: ['c8']}}});
-    expect(fs.rm).toHaveBeenCalledWith(`${projectRoot}/.c8rc`, {force: true});
+    expect(fs.rm).toHaveBeenCalledWith(`${projectRoot}/.c8rc.json`, {force: true});
   });
 });
