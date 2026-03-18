@@ -11,7 +11,7 @@ describe('c8 remover', () => {
   it('should remove c8 relevant details from the project', async () => {
     const projectRoot = any.string();
 
-    expect(await removeC8({projectRoot})).toEqual({dependencies: {javascript: {remove: ['c8']}}});
+    expect(await removeC8({projectRoot})).toEqual({dependencies: {javascript: {remove: ['c8', 'cross-env']}}});
     expect(fs.rm).toHaveBeenCalledWith(`${projectRoot}/.c8rc.json`, {force: true});
   });
 });

@@ -3,5 +3,5 @@ import {promises as fs} from 'node:fs';
 export default async function removeC8({projectRoot}) {
   await fs.rm(`${projectRoot}/.c8rc.json`, {force: true});
 
-  return {dependencies: {javascript: {remove: ['c8']}}};
+  return {dependencies: {javascript: {remove: ['c8', 'cross-env']}}};
 }
